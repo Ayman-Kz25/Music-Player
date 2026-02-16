@@ -5,18 +5,20 @@ import Trending from "./Trending";
 import Player from "./Player";
 import Favorites from "./Favorites";
 
-function Home() {
+function Index() {
   return (
     <Router>
-      <Routes>
+      <div className="home-container">
+        <Routes>
         <Route path="/" element={<Library />} />
         <Route path="/feed" element={<Feed />} />
         <Route path="/trending" element={<Trending />} />
         <Route path="/player" element={<Player />} />
         <Route path="/favorites" element={<Favorites />} />
       </Routes>
+      </div>
     </Router>
   );
 }
 
-export default Home;
+export default Index;

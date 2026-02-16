@@ -1,8 +1,9 @@
-import Home from './screens/Home'
+import Index from './screens/Index'
+import './index.css'
 
 function App() {
   return (
-    <Home />
+    <Index />
   )
 }
 

@@ -1,6 +1,21 @@
 @import "tailwindcss";
 
+:root {
+    --main-bg: #000000;
+}
+
 body {
     box-sizing: border-box;
     margin: 0;
+    background: var(--main-bg);
+}
+
+/* Home Page */
+.home-container {
+    @apply h-[100vh] w-[100vw] bg-rose-300 rounded-4xl;
+}
+
+/* Sidebar Component */
+.sidebar-container {
+    @apply ;
 }
