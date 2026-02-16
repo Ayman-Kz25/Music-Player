@@ -17,5 +17,5 @@ body {
 
 /* Sidebar Component */
 .sidebar-container {
-    @apply ;
+    @apply w-[100px] h-full;
 }
