@@ -3,14 +3,15 @@
 
 :root {
     --main-bg: #000000;
-    --home-bg: #CEACEC;
+    --home-bg: #E7D5F6;
     --screen-bg: #351353;
+    --login-bg: #1B092A;
     
     --accent: #852FD0;
     --accent-dark: #6A26A6;
 
     --text-dark: #1B092A;
-    --text-light: #E7D5F6;
+    --text-light: #F3EAFA;
 
     --surface: #ffffff;
 }
@@ -18,12 +19,17 @@
 body {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     background: var(--main-bg);
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Home Page */
 .home-container {
-    @apply h-[100vh] w-[99vw] flex bg-[var(--home-bg)] rounded-4xl;
+    @apply h-[100vh] w-[100vw] flex bg-[var(--home-bg)] rounded-3xl;
 }
 
 /* Sidebar Component */
@@ -50,3 +56,17 @@ body {
 .sidebar-item {
     @apply text-sm;
 }
+
+/* Login Screen */
+.login-screen {
+    @apply bg-[var(--login-bg)] h-[100vh] w-[1000vw] flex flex-col items-center justify-center overflow-hidden;
+}
+
+.logo {
+    @apply w-[30%];
+}
+
+.login-btn {
+    @apply w-[200px] py-4 text-center bg-[var(--home-bg)] rounded-[50px] text-[var(--text-dark)] font-semibold mt-[20%];
+}
+

@@ -5,19 +5,21 @@ import Trending from "./Trending";
 import Player from "./Player";
 import Favorites from "./Favorites";
 import Sidebar from "../components/Sidebar"
+import Login from "./Login";
 
 function Index() {
   return (
     <Router>
       <div className="home-container">
-      <Sidebar />
+        <Login />
+      {/* <Sidebar />
         <Routes>
         <Route path="/" element={<Library />} />
         <Route path="/feed" element={<Feed />} />
         <Route path="/trending" element={<Trending />} />
         <Route path="/player" element={<Player />} />
         <Route path="/favorites" element={<Favorites />} />
-      </Routes>
+      </Routes> */}
       </div>
     </Router>
   );
